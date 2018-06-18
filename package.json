@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "surge -p dist -d https://hasreactpassedvueyet.surge.sh",
+    "deploy": "npx surge -p build -d https://hasreactpassedvueyet.surge.sh",
     "wt:update": "cd functions && wt update fetchGithubStars fetchGithubStars.js"
   },
   "dependencies": {
@@ -15,5 +15,18 @@
   },
   "devDependencies": {
     "react-scripts": "^2.0.0-next.3e165448"
+  },
+  "homepage": ".",
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 8"
+    ]
   }
 }
