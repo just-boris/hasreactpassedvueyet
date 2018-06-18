@@ -96,7 +96,7 @@ export default class App extends React.Component {
     return (
       <React.Fragment>
         <GithubCorner />
-        <p>Has Vue passed React yet?</p>
+        <p>Has React passed Vue yet?</p>
         {repos && <Content repos={repos} reloading={reloading} />}
         {repos && <Reload onClick={this.reload.bind(this)} reloading={reloading} />}
         {error && <Error />}

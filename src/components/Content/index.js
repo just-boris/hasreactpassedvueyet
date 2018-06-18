@@ -23,33 +23,33 @@ export default class Content extends React.Component {
     const tie = vueStars === reactStars;
     return (
       <React.Fragment>
-        {!tie ? <h1>{vueHasPassedReact ? "YES" : "NO"}</h1> : <h1 className="pad">TIE!</h1>}
+        {!tie ? <h1>{reactPassedVue ? "YES" : "NO"}</h1> : <h1 className="pad">TIE!</h1>}
         <p>
           {reactPassedVue && (
             <small className="away">
-              Only {formatNumber(reactStars - vueStars)}{" "}
-              {reactStars - vueStars === 1 ? "star" : "stars"} away!
+              Ahead by {formatNumber(reactStars - vueStars)}{" "}
+              {reactStars - vueStars === 1 ? "star" : "stars"}!
             </small>
           )}
           {vueHasPassedReact && (
             <small className="ahead">
-              Ahead by {formatNumber(vueStars - reactStars)}{" "}
-              {vueStars - reactStars === 1 ? "star" : "stars"}!
+              Only {formatNumber(vueStars - reactStars)}{" "}
+              {vueStars - reactStars === 1 ? "star" : "stars"} away!
             </small>
           )}
         </p>
         <ul>
           <li>
-            <a href={repos.vue.url} target="_blank">
-              <VueIcon />
-              <span>{formatNumber(vueStars)}</span>
+            <a href={repos.react.url} target="_blank">
+              <ReactIcon />
+              <span>{formatNumber(reactStars)}</span>
               <StarIcon />
             </a>
           </li>
           <li>
-            <a href={repos.react.url} target="_blank">
-              <ReactIcon />
-              <span>{formatNumber(reactStars)}</span>
+            <a href={repos.vue.url} target="_blank">
+              <VueIcon />
+              <span>{formatNumber(vueStars)}</span>
               <StarIcon />
             </a>
           </li>
