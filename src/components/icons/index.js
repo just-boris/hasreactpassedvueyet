@@ -1,9 +1,5 @@
-import VueIcon from './VueIcon.vue'
-import ReactIcon from './ReactIcon.vue'
-import StarIcon from './StarIcon.vue'
+import { ReactComponent as ReactIcon } from "./ReactIcon.svg";
+import { ReactComponent as VueIcon } from "./VueIcon.svg";
+import { ReactComponent as StarIcon } from "./StarIcon.svg";
 
-export {
-  VueIcon,
-  ReactIcon,
-  StarIcon
-}
+export { ReactIcon, VueIcon, StarIcon };

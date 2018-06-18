@@ -16,10 +16,10 @@ yarn
 
 ### Development
 
-Start a dev server on [http://localhost:8080](http://localhost:8080)
+Start a dev server on [http://localhost:3000](http://localhost:3000)
 
 ```bash
-yarn dev
+yarn start
 ```
 
 ### Production
