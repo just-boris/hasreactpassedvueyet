@@ -6,7 +6,7 @@ export default function GithubCorner() {
   return (
     <div className="github-corner">
       <a
-        href="https://github.com/stursby/hasvuepassedreactyet"
+        href="https://github.com/just-boris/hasreactpassedvueyet"
         className="github-corner"
         target="_blank"
         aria-label="View source on Github"
